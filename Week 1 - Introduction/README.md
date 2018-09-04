@@ -54,7 +54,44 @@ In conclusion, there are actually more than one approaches to this problem, but 
 
 [Problemset 854A - Fractions](https://codeforces.com/contest/854/problem/A)
 
-[Solution](https://codeforces.com/contest/854/my)
+[Solution](https://codeforces.com/contest/854/submission/42423464)
 
 -----------------------------------------------------
 
+Problem 988A - Diverse Team
+=====
+
+The problem wants us to determine if there can be a requested amount of students of **distinct** scores to form a team. 
+There are *n* number of students to select from, and the result should have a **"YES"** if it is possible to form the requested team, along with the respective positions of the students, or **"NO"** if it isn't possible to form the requested team.
+
+The problem starts off with three inputs;
+1. The number of students
+2. The size of the requested team
+3. The respective scores of the students
+
+In my solution, I decided to use **map** from the C++ STL. Here, I would map the scores and positions of each and every individual student.
+
+**NOTE**
+*ranks* is a map.
+
+**for (int i=1; i<=numberOfStudents; i++)
+    {
+        cin>>score; //the scores of people.
+        it = ranks.find(score); //we use iterator "it" to find, if there is a duplicate score in "ranks".
+        if (it!=ranks.end()) //the iterator will find the score, if there is a duplicate score, iterator will stop before "ranks" end.
+        {
+            continue;
+        }
+        else //if not, then insert a pair of the score and position.
+        {
+            ranks.insert(pair<int,int>  (score, i));
+        }
+    }**
+    
+The magic lies in this for loop. If there isn't a duplicate (i.e. all distinct scores from the students) then the two paired values (score and position (represented by *i*)) will be inserted into the map.
+
+The output will just show the results- **"NO"** if the map size isn't equal to that of the requested team size, and **"YES"** along with the output of the student positions, if the map size is equal or larger than the requested team size.
+
+[Problem 988A - Diverse Team](https://codeforces.com/contest/988/problem/A)
+
+[Solution](https://codeforces.com/contest/988/submission/42355521)
