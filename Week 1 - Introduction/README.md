@@ -75,8 +75,8 @@ In my solution, I decided to use **map** from the C++ STL. Here, I would map the
 
 *ranks* is a map.
 
-'''
-**for (int i=1; i<=numberOfStudents; i++)
+
+    **for (int i=1; i<=numberOfStudents; i++)
     {
         cin>>score; //the scores of people.
         it = ranks.find(score); //we use iterator "it" to find, if there is a duplicate score in "ranks".
@@ -89,7 +89,7 @@ In my solution, I decided to use **map** from the C++ STL. Here, I would map the
             ranks.insert(pair<int,int>  (score, i));
         }
     }**
-'''    
+    
 
 The magic lies in this for loop. If there isn't a duplicate (i.e. all distinct scores from the students) then the two paired values (score and position (represented by *i*)) will be inserted into the map.
 
