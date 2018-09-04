@@ -26,6 +26,7 @@ This will subtract the required amount of yellow crystals from the yellow crysta
 This algorithm will be the same for needGreen and needBlue, along with the respective amounts of crystals to be subtracted from Grisha's yellow and blue storage.
 
 For a clearer depiction, please refer to the links as follows;
+
 [Problemset 912A - Tricky Alchemy](https://codeforces.com/problemset/problem/912/A)
 
 [Solution](https://codeforces.com/contest/912/submission/42300609)
