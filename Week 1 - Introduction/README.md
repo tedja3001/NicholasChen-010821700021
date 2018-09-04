@@ -72,8 +72,10 @@ The problem starts off with three inputs;
 In my solution, I decided to use **map** from the C++ STL. Here, I would map the scores and positions of each and every individual student.
 
 **NOTE**
+
 *ranks* is a map.
 
+'''
 **for (int i=1; i<=numberOfStudents; i++)
     {
         cin>>score; //the scores of people.
@@ -87,7 +89,8 @@ In my solution, I decided to use **map** from the C++ STL. Here, I would map the
             ranks.insert(pair<int,int>  (score, i));
         }
     }**
-    
+'''    
+
 The magic lies in this for loop. If there isn't a duplicate (i.e. all distinct scores from the students) then the two paired values (score and position (represented by *i*)) will be inserted into the map.
 
 The output will just show the results- **"NO"** if the map size isn't equal to that of the requested team size, and **"YES"** along with the output of the student positions, if the map size is equal or larger than the requested team size.
