@@ -8,6 +8,7 @@ My solution to this problem follows the algorithm in which the current number in
 For more info, please click on the corresponding links below.
 
 [Problem 291A - Spyke Talks](http://codeforces.com/contest/291/problem/A)
+
 [Solution](http://codeforces.com/contest/291/submission/42753032)
 
 
@@ -26,6 +27,7 @@ The following illustrates the breakdown of my code in steps, all which I used to
 For more info, please click on the corresponding links below.
 
 [Problem 230A - Dragons](http://codeforces.com/contest/230/problem/A)
+
 [Solution](http://codeforces.com/contest/230/submission/42753055)
 
 
@@ -43,6 +45,7 @@ The following represents the idea breakdown of my code in a step-by-step format,
 For more info, please click on the corresponding links below.
 
 [Problem 768A - Oath of the Night's Watch](http://codeforces.com/contest/768/problem/A)
+
 [Solution](http://codeforces.com/contest/768/submission/42753070)
 
 
